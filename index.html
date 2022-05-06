@@ -1,34 +1,28 @@
-
-<script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
-<video id="video-id"><source src="https://github.com/SimplyGav/SimplyGav.github.io/raw/main/FMJO.mp4" type="video/mp4" />
-<script>
-    var myFP = fluidPlayer(
-        'video-id',	{
-	"layoutControls": {
-		"controlBar": {
-			"autoHideTimeout": 3,
-			"animated": true,
-			"autoHide": true
-		},
-		"htmlOnPauseBlock": {
-			"html": null,
-			"height": null,
-			"width": null
-		},
-		"autoPlay": true,
-		"mute": true,
-		"allowTheatre": true,
-		"playPauseAnimation": false,
-		"playbackRateEnabled": false,
-		"allowDownload": false,
-		"playButtonShowing": false,
-		"fillToContainer": false,
-		"posterImage": ""
-	},
-	"vastOptions": {
-		"adList": [],
-		"adCTAText": false,
-		"adCTATextPosition": ""
-	}
-});
+     <!DOCTYPE html>
+<html>
+<head>
+    <title>Login page</title>
+</head>
+<body>
+<form>
+    <h1> This page is password protected.</br> Please enter the password. </h1>
+    <label for="pswd">Password: </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Confirm" onclick="pwconfirm();" />
+</form>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function pwconfirm() {
+        var confirmPassword = "admin";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="welcome.html";
+        }
+        else{
+            alert("Passwords do not match.");
+          window.location="https://www.google.com"; 
+        }
+    }
 </script>
+</body>
+</html>
