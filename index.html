@@ -1,28 +1,13 @@
-     <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Login page</title>
+
+<h1> This page is the index of my password protected pages </h1>
+<h2> Here are the following pages! </h2>
+
+<h3>-- Games --</h3>
+<a href="CookieClicker.html"><nobr>Cookie Clicker</nobr></a>
+
+
 </head>
-<body>
-<form>
-    <h1> This page is password protected.</br> Please enter the password. </h1>
-    <label for="pswd">Password: </label>
-    <input type="password" id="pswd">
-    <input type="button" value="Confirm" onclick="pwconfirm();" />
-</form>
-<!--Function to check password the already set password is admin-->
-<script type="text/javascript">
-    function pwconfirm() {
-        var confirmPassword = "admin";
-        var password = document.getElementById("pswd").value;
-        if (password == confirmPassword) {
-             window.location="welcome.html";
-        }
-        else{
-            alert("Passwords do not match.");
-          window.location="https://www.google.com"; 
-        }
-    }
-</script>
-</body>
 </html>
