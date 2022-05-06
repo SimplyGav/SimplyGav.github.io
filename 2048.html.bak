@@ -1,5 +1,5 @@
 <html><head><base target="_blank"></head><body><h1>2048</h1>
-<button style="background: rgb(255, 81, 72);">Game Loaded!</button>
+<button>Play Now!</button>
 <script>
     var urlObj = new window.URL(window.location.href);
     var url = "https://hczhcz.github.io/2048/20ez/";
